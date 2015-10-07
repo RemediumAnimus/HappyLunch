@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Моя диета</title>
+
+        <!-- Reset styles -->
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css" >
+
+        <!-- Template styles -->
+        <link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.css" >
+        <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css" >
+        <link rel="stylesheet" href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" >
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="template-styles.css" >
+
+
+        <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
+
+        <!-- Scripts -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
+        <script src="js/vendor/fastclick.min.js"></script>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <script src="js/vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/vendor/maskedPlug/masked.js"></script>
+        <script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+        <script src="js/vendor/tabby/classList.min.js"></script>
+        <script src="js/vendor/tabby/tabby.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/vendor/jcarousel/jquery.jcarousel.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <script src="js/vendor/scripts.js"></script>
+
+	</head>
+
+	<body>
+
+        <div id="page">
+
+            <header class="n-header">
+
+                <div class="n-container">
+
+                    <div class="n-header__top">
+
+                        <div class="n-header__top__container">
+
+                            <div class="n-header__top__left">
+
+                                <div class="n-header__top__phones">
+                                <span>+7(909)123-45-67, +7(921)759-56-75</span>
+                                </div>
+
+                                <div class="n-header__top__time">
+                                    <span>Пн.-Вс.: <b>11:00 - 21.00</b></span>
+                                </div>
+
+                            </div>
+                            <!-- /.n-header__top__left -->
+
+                            <div class="n-header__top__right">
+
+                                <ul>
+                                    <li><a href="#">МОЯ ДИЕТА</a></li>
+                                    <li><a href="#">Личный кабинет</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                    <li class="n-header__top__right__twitter"><a href="#"></a></li>
+                                </ul>
+
+                            </div>
+                            <!-- /.n-header__top__right -->
+
+                        </div>
+                        <!-- /.n-header__top__container -->
+
+                    </div>
+                    <!-- /.n-header__top -->
+
+                    <div class="n-header__middle">
+
+                        <div class="n-header__middle__container">
+
+                            <div class="n-header__middle__logo"></div>
+
+                            <ul class="n-header__middle__nav">
+                            	<li><a href="#">Главная</a></li>
+                            	<li><a href="#">рецепты</a></li>
+                            	<li><a href="#">новости</a></li>
+                            	<li><a href="#">галерея</a></li>
+                            	<li><a href="#">контакты</a></li>
+                            	<li><a href="#">о нас</a></li>
+                            	<li><a href="#">оплата и доставка</a></li>
+                            </ul>
+
+                            <div class="n-header__middle__bucket">
+
+                                <a href="#" class="n-header__middle__bucket__href"></a>
+
+                                <div class="n-header__middle__bucket__ico">
+                                    <div class="n-header__middle__bucket__ico__count">
+                                        <span>14</span>
+                                    </div>
+                                </div>
+
+                                <div class="n-header__middle__bucket__header">Товаров:</div>
+                                <div class="n-header__middle__bucket__cost"><span><b>18 890</b> руб.</span></div>
+
+                            </div>
+                            <!-- /.n-header__middle__bucket -->
+
+                        </div>
+                        <!-- /.n-header__middle__container -->
+
+                    </div>
+                    <!-- /.n-header__middle -->
+
+                    <div class="n-header__bottom">
+
+                        <div class="n-header__bottom__search">
+                            <form>
+                                <input type="text" placeholder="поиск">
+                                <div class="n-header__bottom__search__button">
+                                    <input type="submit" value="">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.n-header__bottom__search -->
+
+                        <div class="n-header__bottom__cities">
+                            <select name="cities" class="n-header__bottom__cities__select" valuer="asds">
+                                <option>Выберите город</option>
+                                <option>Архангельск</option>
+                                <option>Северодвинск</option>
+                                <option>Новодвинск</option>
+                            </select>
+                        </div>
+                        <!-- /.n-header__bottom__sities -->
+
+                    </div>
+                    <!-- /.n-header__bottom -->
+
+                </div>
+                <!-- /.n-container -->
+
+            </header>
+
+            <main class="n-main">
+
+                <div class="n-main__wrap">
+
+                   <div class="n-container--min">
+
+                        <div class="n-main__crumbs">
+
+                            <ul>
+                            	<li><a href="#">Главная</a></li>
+                            	<li><a href="#">Моя диета</a></li>
+                            </ul>
+
+                        </div>
+                        <!-- /.n-main__crumbs -->
+
+                        <h3 class="n-main__header">
+                            Моя диета
+                        </h3>
+
+                        <div class="n-main__question">
+                            <form class="rf">
+                                <textarea class="rfield" placeholder="Ваш вопрос"></textarea>
+                                <input type="submit" class="n-main__button disabled">
+                            </form>
+
+                        </div>
+                        <!-- /.n-main__question -->
+
+                        <div class="n-main__resp">
+
+                            <div class="n-main__resp__item">
+
+                                <div class="n-main__resp__item__name">Альбина Егорова</div>
+                                <div class="n-main__resp__item__quest">
+                                    За последние несколько лет появилось множество сайтов с контентом на самых разных языках,
+                                    аудитория которых очень велика по сравнению с сервисом Вопросы и ответы.
+                                </div>
+
+                                <div class="n-main__resp__item__adm">
+
+                                    <div class="n-main__resp__item__adm__header">ОТВЕТ:</div>
+
+                                    <span>Благодарим за использование сервиса Вопросы и ответы. На сайте Вопросы и ответы больше нельзя задавать вопросы и отвечать на них, а 30 апреля он будет отключен.
+                                        Все материалы со страниц сервиса Вопросы и ответы будут удалены. Чтобы получить более подробную информацию, изучите ответы на часто задаваемые вопросы.</br></br>
+                                        Когда создавался сервис
+                                        Вопросы и ответы, аналогичных ресурсов не на английском языке было очень мало. Однако за последние несколько лет ситуация существенно изменилась: появилось множество сайтов с
+                                        контентом на самых разных языках, которые привлекают огромное количество пользователей.
+
+                                    </span>
+
+                                </div>
+                                <!-- /.n-main__resp__item__adm -->
+
+                                <a class="n-main__button n-main__button-show" href="#">Смотреть ответ</a>
+
+                            </div>
+                            <!-- /.n-main__resp__item -->
+
+                            <div class="n-main__resp__item">
+
+                                <div class="n-main__resp__item__name">Альбина Егорова</div>
+                                <div class="n-main__resp__item__quest">
+                                    За последние несколько лет появилось множество сайтов с контентом на самых разных языках,
+                                    аудитория которых очень велика по сравнению с сервисом Вопросы и ответы.
+                                </div>
+
+                                <div class="n-main__resp__item__adm">
+
+                                    <div class="n-main__resp__item__adm__header">ОТВЕТ:</div>
+
+                                    <span>Благодарим за использование сервиса Вопросы и ответы. На сайте Вопросы и ответы больше нельзя задавать вопросы и отвечать на них, а 30 апреля он будет отключен.
+                                        Все материалы со страниц сервиса Вопросы и ответы будут удалены. Чтобы получить более подробную информацию, изучите ответы на часто задаваемые вопросы.</br></br>
+                                        Когда создавался сервис
+                                        Вопросы и ответы, аналогичных ресурсов не на английском языке было очень мало. Однако за последние несколько лет ситуация существенно изменилась: появилось множество сайтов с
+                                        контентом на самых разных языках, которые привлекают огромное количество пользователей.
+
+                                    </span>
+
+                                </div>
+                                <!-- /.n-main__resp__item__adm -->
+
+                                <a class="n-main__button n-main__button-show" href="#">Смотреть ответ</a>
+
+                            </div>
+                            <!-- /.n-main__resp__item -->
+
+                            <div class="n-main__pag">
+
+                                <ul>
+                                	<li class="n-main__pag__rev1"><a href="#"></a></li>
+                                	<li class="n-main__pag__rev2"><a href="#"></a></li>
+                                	<li><a href="#">1</a></li>
+                                	<li><a href="#">2</a></li>
+                                	<li><a href="#">3</a></li>
+                                	<li><a href="#">4</a></li>
+                                	<li class="n-main__pag__rev3"><a href="#"></a></li>
+                                	<li class="n-main__pag__rev4"><a href="#"></a></li>
+                                </ul>
+
+                            </div>
+                            <!-- /.n-main__pag -->
+
+                        </div>
+                        <!-- /.n-main__resp -->
+
+                   </div>
+                    <!-- /.n-container--min -->
+
+                </div>
+                <!-- /.n-main__wrap -->
+
+            </main>
+
+            <footer class="n-footer">
+
+                <div class="n-footer__top">
+
+                    <div class="n-container--min">
+
+                        <ul class="n-footer__top__nav">
+                            <li><a href="#">Как купить?</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">in</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.n-container--min -->
+
+                </div>
+                <!-- /.n-footer__top -->
+
+                <div class="n-footer__bottom">
+
+                    <div class="n-container--min">
+
+                        <div class="n-footer__bottom__header">Контакты:</div>
+
+                        <div class="n-footer__bottom__container">
+
+                            <div class="n-footer__bottom__container__block">
+                                + 7 909 123 45 67 </br>
+                                г. Архангельск, ул. Улица., д. 88.</br>
+                                email@email.ru</br>
+                            </div>
+                            <!-- /.n-footer__bottom__container__block -->
+
+                            <div class="n-footer__bottom__container__block">
+                                + 7 909 123 45 67</br>
+                                г. Северодвинск, ул. Улица., д. 15</br>
+                                email@email.ru</br>
+                            </div>
+                            <!-- /.n-footer__bottom__container__block -->
+
+                            <div class="n-footer__bottom__container__block">
+                                + 7 909 123 45 67</br>
+                                г. Новодвинск, ул. Улица., д. 18.</br>
+                                email@email.ru</br>
+                            </div>
+                            <!-- /.n-footer__bottom__container__block -->
+                        </div>
+                        <!-- /.n-footer__bottom__container -->
+
+                        <div class="n-footer__bottom__line"></div>
+
+                        <div class="n-footer__bottom__copyright">
+                            <span>COPYRIGHT@2015, GREAT FOOD</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-container--min -->
+
+                </div>
+                <!-- /.n-footer__bottom -->
+
+            </footer>
+
+        </div>
+
+	</body>
+
+
+</html>

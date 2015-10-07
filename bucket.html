@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Корзина</title>
+
+        <!-- Reset styles -->
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css" >
+
+        <!-- Template styles -->
+        <link rel="stylesheet" href="js/vendor/magnific-popup/magnific-popup.css" >
+        <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css" >
+        <link rel="stylesheet" href="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.css" >
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="template-styles.css" >
+
+
+        <!--[if lt IE 10]><script src="js/vendor/IE9.js"></script><![endif]-->
+
+        <!-- Scripts -->
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
+        <script src="js/vendor/fastclick.min.js"></script>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <script src="js/vendor/jquery-validation/jquery.validate.min.js"></script>
+        <script src="js/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/vendor/maskedPlug/masked.js"></script>
+        <script src="js/vendor/swiper/swiper.jquery.min.js"></script>
+        <script src="js/vendor/tabby/classList.min.js"></script>
+        <script src="js/vendor/tabby/tabby.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+        <script src="js/vendor/jcarousel/jquery.jcarousel.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <script src="js/vendor/scripts.js"></script>
+
+	</head>
+
+	<body>
+
+        <div id="page">
+
+            <header class="n-header">
+
+                <div class="n-container">
+
+                    <div class="n-header__top">
+
+                        <div class="n-header__top__container">
+
+                            <div class="n-header__top__left">
+
+                                <div class="n-header__top__phones">
+                                <span>+7(909)123-45-67, +7(921)759-56-75</span>
+                                </div>
+
+                                <div class="n-header__top__time">
+                                    <span>Пн.-Вс.: <b>11:00 - 21.00</b></span>
+                                </div>
+
+                            </div>
+                            <!-- /.n-header__top__left -->
+
+                            <div class="n-header__top__right">
+
+                                <ul>
+                                    <li><a href="#">МОЯ ДИЕТА</a></li>
+                                    <li><a href="#">Личный кабинет</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                    <li class="n-header__top__right__twitter"><a href="#"></a></li>
+                                </ul>
+
+                            </div>
+                            <!-- /.n-header__top__right -->
+
+                        </div>
+                        <!-- /.n-header__top__container -->
+
+                    </div>
+                    <!-- /.n-header__top -->
+
+                    <div class="n-header__middle">
+
+                        <div class="n-header__middle__container">
+
+                            <div class="n-header__middle__logo"></div>
+
+                            <ul class="n-header__middle__nav">
+                            	<li><a href="#">Главная</a></li>
+                            	<li><a href="#">рецепты</a></li>
+                            	<li><a href="#">новости</a></li>
+                            	<li><a href="#">галерея</a></li>
+                            	<li><a href="#">контакты</a></li>
+                            	<li><a href="#">о нас</a></li>
+                            	<li><a href="#">оплата и доставка</a></li>
+                            </ul>
+
+                            <div class="n-header__middle__bucket">
+
+                                <a href="#" class="n-header__middle__bucket__href"></a>
+
+                                <div class="n-header__middle__bucket__ico">
+                                    <div class="n-header__middle__bucket__ico__count">
+                                        <span>14</span>
+                                    </div>
+                                </div>
+
+                                <div class="n-header__middle__bucket__header">Товаров:</div>
+                                <div class="n-header__middle__bucket__cost"><span><b>18 890</b> руб.</span></div>
+
+                            </div>
+                            <!-- /.n-header__middle__bucket -->
+
+                        </div>
+                        <!-- /.n-header__middle__container -->
+
+                    </div>
+                    <!-- /.n-header__middle -->
+
+                    <div class="n-header__bottom">
+
+                        <div class="n-header__bottom__search">
+                            <form>
+                                <input type="text" placeholder="поиск">
+                                <div class="n-header__bottom__search__button">
+                                    <input type="submit" value="">
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.n-header__bottom__search -->
+
+                        <div class="n-header__bottom__cities">
+                            <select name="cities" class="n-header__bottom__cities__select" valuer="asds">
+                                <option>Выберите город</option>
+                                <option>Архангельск</option>
+                                <option>Северодвинск</option>
+                                <option>Новодвинск</option>
+                            </select>
+                        </div>
+                        <!-- /.n-header__bottom__sities -->
+
+                    </div>
+                    <!-- /.n-header__bottom -->
+
+                </div>
+                <!-- /.n-container -->
+
+            </header>
+
+            <main class="n-main">
+
+                <div class="n-main__wrap">
+
+                   <div class="n-container--min">
+
+                        <div class="n-main__crumbs">
+
+                            <ul>
+                            	<li><a href="#">Главная</a></li>
+                            	<li><a href="#">Корзина</a></li>
+                            </ul>
+
+                        </div>
+                        <!-- /.n-main__crumbs -->
+
+                        <h3 class="n-main__header">
+                            Корзина
+                        </h3>
+
+                        <div class="n-main__bucket">
+
+                            <div class="n-main__bucket__menu">
+
+                                <ul>
+                                	<li><a href="#">Личные данные</a></li>
+                                	<li><a href="#">Корзина</a></li>
+                                	<li><a href="#">История заказов</a></li>
+                                </ul>
+
+                            </div>
+                            <!-- /.n-main__bucket__menu -->
+
+                            <div class="n-main__bucket__table">
+
+                                <div class="n-main__bucket__table__head">
+
+                                   <div class="n-main__bucket__table__head__cell"></div>
+                                   <div class="n-main__bucket__table__head__cell"><span>Наименование</span></div>
+                                   <div class="n-main__bucket__table__head__cell"><span>Цена</span></div>
+                                   <div class="n-main__bucket__table__head__cell"><span>Количество</span></div>
+                                   <div class="n-main__bucket__table__head__cell"><span>Сумма</span></div>
+                                   <div class="n-main__bucket__table__head__cell"></div>
+
+                                </div>
+                                <!-- /.n-main__bucket__table__head -->
+
+                                <div class="n-main__bucket__table__wrap">
+
+                                    <div class="n-main__bucket__table__wrap__row">
+
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--pic">
+                                           <img src="img/tmp/t1.png" alt="" />
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--name">
+                                           <span>Блинчики с ветчиной и сыром</span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--cost">
+                                           <span class="n-main__bucket__table__wrap__row--cost__current">280<span class="price"> &#8381;</span></span>
+                                           <span class="n-main__bucket__table__wrap__row--cost__old"><del>350</del><span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--counter">
+                                           <div class="n-main__wrap__items__item__wrap__counter">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn minus">
+                                                    <span>&minus;</span>
+                                                </div>
+                                                <input type="text" value="2">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn plus">
+                                                    <span>&plus;</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.n-main__wrap__items__item__wrap__counter -->
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--summ">
+                                           <span>560 <span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__rowl__cell n-main__bucket__table__wrap__row--close"><a href="#"></a></div>
+
+                                    </div>
+                                    <!-- /.n-main__bucket__table__wrap__row -->
+
+                                    <div class="n-main__bucket__table__wrap__row">
+
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--pic">
+                                           <img src="img/tmp/t2.png" alt="" />
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--name">
+                                           <span>Гречневая каша с грибами</span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--cost">
+                                           <span class="n-main__bucket__table__wrap__row--cost__current">280<span class="price"> &#8381;</span></span>
+                                           <span class="n-main__bucket__table__wrap__row--cost__old"><del>350</del><span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--counter">
+                                           <div class="n-main__wrap__items__item__wrap__counter">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn minus">
+                                                    <span>&minus;</span>
+                                                </div>
+                                                <input type="text" value="2">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn plus">
+                                                    <span>&plus;</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.n-main__wrap__items__item__wrap__counter -->
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--summ">
+                                           <span>560 <span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__rowl__cell n-main__bucket__table__wrap__row--close"><a href="#"></a></div>
+
+                                    </div>
+                                    <!-- /.n-main__bucket__table__wrap__row -->
+
+                                    <div class="n-main__bucket__table__wrap__row">
+
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--pic">
+                                           <img src="img/tmp/t3.png" alt="" />
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--name">
+                                           <span>Салат «Особый»</span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--cost">
+                                           <span class="n-main__bucket__table__wrap__row--cost__current">280<span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--counter">
+                                           <div class="n-main__wrap__items__item__wrap__counter">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn minus">
+                                                    <span>&minus;</span>
+                                                </div>
+                                                <input type="text" value="2">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn plus">
+                                                    <span>&plus;</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.n-main__wrap__items__item__wrap__counter -->
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--summ">
+                                           <span>560 <span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__rowl__cell n-main__bucket__table__wrap__row--close"><a href="#"></a></div>
+
+                                    </div>
+                                    <!-- /.n-main__bucket__table__wrap__row -->
+
+                                    <div class="n-main__bucket__table__wrap__row">
+
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--pic">
+                                           <img src="img/tmp/t4.png" alt="" />
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--name">
+                                           <span>Нарезка «Ассорти»</span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--cost">
+                                           <span class="n-main__bucket__table__wrap__row--cost__current">280<span class="price"> &#8381;</span></span>
+                                           <span class="n-main__bucket__table__wrap__row--cost__old"><del>350</del><span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--counter">
+                                           <div class="n-main__wrap__items__item__wrap__counter">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn minus">
+                                                    <span>&minus;</span>
+                                                </div>
+                                                <input type="text" value="2">
+                                                <div class="n-main__wrap__items__item__wrap__counter__btn plus">
+                                                    <span>&plus;</span>
+                                                </div>
+                                            </div>
+                                            <!-- /.n-main__wrap__items__item__wrap__counter -->
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__row__cell n-main__bucket__table__wrap__row--summ">
+                                           <span>560 <span class="price"> &#8381;</span></span>
+                                       </div>
+                                       <div class="n-main__bucket__table__wrap__rowl__cell n-main__bucket__table__wrap__row--close"><a href="#"></a></div>
+
+                                    </div>
+                                    <!-- /.n-main__bucket__table__wrap__row -->
+
+                                </div>
+                                <!-- /.n-main__bucket__table__wrap -->
+
+                                <div class="n-main__bucket__table__all">
+
+                                    <b>Итого:</b><span> 1660 <span class="price"> &#8381;</span></span>
+
+                                </div>
+                                <!-- /.n-main__bucket__table__all -->
+
+                                <div class="n-main__bucket__table__buttons">
+
+                                    <a class="n-main__bucket__table__buttons__button" href="#">
+                                        <span>ВЕРНУТЬСЯ В МЕНЮ</span>
+                                    </a>
+
+                                    <a class="n-main__bucket__table__buttons__button" href="#">
+                                        <span>ОФОРМИТЬ ЗАКАЗ</span>
+                                    </a>
+
+                                </div>
+                                <!-- /.n-main__bucket__table__buttons -->
+
+                            </div>
+                            <!-- /.n-main__bucket__table -->
+
+                        </div>
+                        <!-- /.n-main__bucket -->
+
+                   </div>
+                    <!-- /.n-container--min -->
+
+                </div>
+                <!-- /.n-main__wrap -->
+
+            </main>
+
+            <footer class="n-footer">
+
+                <div class="n-footer__top">
+
+                    <div class="n-container--min">
+
+                        <ul class="n-footer__top__nav">
+                            <li><a href="#">Как купить?</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">О магазине</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">in</a></li>
+                        </ul>
+
+                    </div>
+                    <!-- /.n-container--min -->
+
+                </div>
+                <!-- /.n-footer__top -->
+
+                <div class="n-footer__bottom">
+
+                    <div class="n-container--min">
+
+                        <div class="n-footer__bottom__header">Контакты:</div>
+
+                        <div class="n-footer__bottom__container">
+
+                            <div class="n-footer__bottom__container__block">
+                                + 7 909 123 45 67 </br>
+                                г. Архангельск, ул. Улица., д. 88.</br>
+                                email@email.ru</br>
+                            </div>
+                            <!-- /.n-footer__bottom__container__block -->
+
+                            <div class="n-footer__bottom__container__block">
+                                + 7 909 123 45 67</br>
+                                г. Северодвинск, ул. Улица., д. 15</br>
+                                email@email.ru</br>
+                            </div>
+                            <!-- /.n-footer__bottom__container__block -->
+
+                            <div class="n-footer__bottom__container__block">
+                                + 7 909 123 45 67</br>
+                                г. Новодвинск, ул. Улица., д. 18.</br>
+                                email@email.ru</br>
+                            </div>
+                            <!-- /.n-footer__bottom__container__block -->
+                        </div>
+                        <!-- /.n-footer__bottom__container -->
+
+                        <div class="n-footer__bottom__line"></div>
+
+                        <div class="n-footer__bottom__copyright">
+                            <span>COPYRIGHT@2015, GREAT FOOD</span>
+                        </div>
+
+                    </div>
+                    <!-- /.n-container--min -->
+
+                </div>
+                <!-- /.n-footer__bottom -->
+
+            </footer>
+
+        </div>
+
+	</body>
+
+
+</html>
